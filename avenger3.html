@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,42 +17,77 @@
       <a href="contact.html">Contact</a>
     </div>
 
-    <h2>Hulk</h2>
+    <div class="content">
+      <!-- Wraps content in a container -->
+      <h2>Hulk</h2>
 
-    <!-- Flip container: wraps the whole flip effect -->
-<div class="flip-container">
-  <!-- Flipper: the inner box that rotates when you hover -->
-  <div class="flipper">
-    <!-- Front image: what shows first -->
-    <img class="front" src="images/thehulk2.jpg" alt="Hulk Front">
-    <!-- Back image: what shows when you hover -->
-    <img class="back" src="images/thehulkback.jpg" alt="Hulk Back">
-  </div>
+      <!-- Flip container: wraps the whole flip effect -->
+      <div class="flip-container">
+        <!-- Flipper: the inner box that rotates when you hover -->
+        <div class="flipper">
+          <!-- Front image: what shows first -->
+          <img class="front" src="images/thehulk2.jpg" alt="Hulk Front" />
+          <!-- Back image: what shows when you hover -->
+          <img class="back" src="images/thehulkback.jpg" alt="Hulk Back" />
+        </div>
+      </div>
 
-    <h4>Bio</h4>
-    <p>
-      <b> Full Name:</b> Bruce Banner
-      <br />
-      <b> Place of Birth:</b> Dayton, Ohio, USA
-      <br />
-      <b>Age:</b> 45-50 years old
-      <br />
-      <b> Alignment:</b> Good
-      <br />
-      <b> Race: Human</b> (Gamma Radiation-transformed )
-    </p>
-    <h4>Power Status</h4>
-    <p>
-      <b> Intelligence:</b> 95%
-      <br />
-      <b> Strength:</b> 100%
-      <br />
-      <b> Speed:</b> 80%
-      <br />
-      <b> Durability:</b> 95%
-      <br />
-      <b> Power:</b> 100% (Gamma-Powered Transformatio, superhuman strength,
-      regenerative healing)
-    </p>
+      <h4>Bio</h4>
+      <p>
+        <b> Full Name:</b> Bruce Banner
+        <br />
+        <b> Place of Birth:</b> Dayton, Ohio, USA
+        <br />
+        <b>Age:</b> 45-50 years old
+        <br />
+        <b> Alignment:</b> Good
+        <br />
+        <b> Race: Human</b> (Gamma Radiation-transformed)
+      </p>
+
+      <h4>Power Status</h4>
+
+      <!-- Horizontal Power Status -->
+      <div class="power-status">
+        <div class="power-bar">
+          <span>Intelligence</span>
+          <div class="bar">
+            <div class="fill" style="width: 90%">90%</div>
+          </div>
+        </div>
+
+        <div class="power-bar">
+          <span>Strength</span>
+          <div class="bar">
+            <div class="fill" style="width: 100%">100%</div>
+          </div>
+        </div>
+
+        <div class="power-bar">
+          <span>Speed</span>
+          <div class="bar">
+            <div class="fill" style="width: 75%">75%</div>
+          </div>
+        </div>
+
+        <div class="power-bar">
+          <span>Durability</span>
+          <div class="bar">
+            <div class="fill" style="width: 95%">95%</div>
+          </div>
+        </div>
+
+        <div class="power-bar">
+          <span>Power</span>
+          <div class="bar">
+            <div class="fill" style="width: 96%">96%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Manana's &COPY; Avengers App 2025</p>
+    </footer>
   </body>
 </html>

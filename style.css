@@ -17,13 +17,87 @@
   transform: scale(1.05); /* slight zoom on hover */
 }
 
-body {
-  background-image: url("images/avengers.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+/* Make the hero blocks inline centerd */
+.hero {
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
 }
+
+/* Styling the hero's names*/
+.hero-name {
+  font-family: "Bangers", cursive;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+/* Thor hover */
+.thor:hover .hero-name {
+  color: #105252; /* lightning blue */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* Iron Man hover */
+.ironman:hover .hero-name {
+  color: #900404; /* red-gold */
+  text-shadow: 0 0 10px #f81b1b, 0 0 20px #fe0808;
+}
+
+/* Hulk hover */
+.hulk:hover .hero-name {
+  color: #095909; /* gamma green */
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+/* Hawkeye hover */
+.hawkeye:hover .hero-name {
+  color: #51039f; /* purple */
+  text-shadow: 0 0 10px #dfd5e8, 0 0 20px #bf83fb;
+}
+
+/* Captain America hover */
+.captain:hover .hero-name {
+  color: #1355d7; /* shield blue */
+  text-shadow: 0 0 10px #1d58cd, 0 0 20px #0055ff;
+}
+
+/* Black Widow hover */
+.blackwidow:hover .hero-name {
+  color: #5f0322; /* red-pink */
+  text-shadow: 0 0 10px #e10b56, 0 0 20px #ff0055;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed; /*keeps it fixed while scrolling */
+
+  /* This makes sure the background image covers the entire viewport */
+  background-image: url("images/avengers.jpg"); /* background your image */
+  background-size: cover; /* 💥 Key: makes image always cover whole screen */
+  background-repeat: no-repeat; /* No tiling */
+  background-position: center; /* Keeps image nicely centered when resizing */
+  min-height: 100vh; /* Always at least full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* Dark overlay background */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(70, 25, 25, 0.7); /* 0.7 = 70% darkness */
+  z-index: -1; /* Behind your content */
+}
+
 /* 
   Style the #menu div:
   - width: 100% makes it stretch across the full page.
@@ -36,6 +110,7 @@ body {
   height: 40px;
   padding-top: 12px;
   background-color: rgb(17, 30, 53);
+  text-align: center;
 }
 
 /* 
@@ -62,21 +137,17 @@ body {
   When the user hovers over a link, the text color changes to black.
 */
 #menu a:hover {
-  color: black;
+  color: rgb(70, 185, 234);
 }
 
 h2 {
-  font-weight: 900;
+  font-size: 60px;
   padding-left: 15px;
-}
-
-h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-align: center;
+  font-family: "Bangers", cursive;
 }
 
 #title img {
-  max-width: 500px; /* Limits the max size so it doesn’t get too big */
+  max-width: 600px; /* Limits the max size so it doesn’t get too big */
   width: 80%; /* Scales nicely on smaller screens */
   display: block; /* centers work properly */
   margin: 40px auto; /* Centers horizontally with space above */
@@ -138,4 +209,54 @@ h1 {
 /* Back image: rotated 180deg so when the flipper rotates, this side shows correctly */
 .back {
   transform: rotateY(180deg); /* Rotate to face forward on flip */
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: rgba(
+    17,
+    30,
+    53,
+    0.9
+  ); /* Same dark blue, slight transparency */
+  color: #ffffff; /* White text */
+  text-align: center; /* Centered text */
+  padding: 15px 0; /* Top and bottom padding */
+  font-size: 14px; /* Small text */
+  margin-top: auto; /* Push footer to bottom if page is short */
+}
+/* Power Status Bars */
+.power-status {
+  max-width: 500px;
+}
+
+.power-bar {
+  margin-bottom: 15px;
+}
+
+.power-bar span {
+  display: inline-block;
+  width: 120px; /* Label width */
+  font-weight: bold;
+}
+
+.bar {
+  display: inline-block;
+  background: #ddd;
+  width: 60%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.fill {
+  background: linear-gradient(90deg, #034784, #00bfff);
+  height: 100%;
+  color: #fff;
+  text-align: right;
+  padding-right: 8px;
+  line-height: 20px;
+  font-size: 12px;
+  border-radius: 10px 0 0 10px;
 }

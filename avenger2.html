@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avenger2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,42 +17,77 @@
       <a href="contact.html">Contact</a>
     </div>
 
-    <h2>IRON MAN</h2>
+    <div class="content">
+      <!-- Wraps content in a container -->
+      <h2>IRON MAN</h2>
 
-    <!-- Flip container: wraps the whole flip effect -->
-<div class="flip-container">
-  <!-- Flipper: the inner box that rotates when you hover -->
-  <div class="flipper">
-    <!-- Front image: what shows first -->
-    <img class="front" src="images/TonyStark.jpg" alt="Iron Man Front">
-    <!-- Back image: what shows when you hover -->
-    <img class="back" src="images/ironmanback.jpg" alt="Iron Man Back">
-  </div>
+      <!-- Flip container: wraps the whole flip effect -->
+      <div class="flip-container">
+        <!-- Flipper: the inner box that rotates when you hover -->
+        <div class="flipper">
+          <!-- Front image: what shows first -->
+          <img class="front" src="images/TonyStark.jpg" alt="Iron Man Front" />
+          <!-- Back image: what shows when you hover -->
+          <img class="back" src="images/ironmanback.jpg" alt="Iron Man Back" />
+        </div>
+      </div>
 
-    <h4>Bio</h4>
-    <p>
-      <b> Full Name:</b> Tony Stark
-      <br />
-      <b> Place of Birth:</b> Long Island, New York, USA
-      <br />
-      <b>Age:</b> 50
-      <br />
-      <b> Alignment:</b> Good
-      <br />
-      <b> Race:</b> Human
-    </p>
-    <h4>Power Status</h4>
-    <p>
-      <b>Intelligence:</b> 100%
-      <br />
-      <b>Strength:</b> 80% (Enhanced by Iron Man Suit)
-      <br />
-      <b>Speed:</b> 90% (Enhanced Flight Speed)
-      <br />
-      <b>Durability:</b> 90% (Iron Man Suit)
-      <br />
-      <b>Power:</b> 95% (Suit Power: Energy weapons, flight, superhuman
-      strength)
-    </p>
+      <h4>Bio</h4>
+      <p>
+        <b> Full Name:</b> Tony Stark
+        <br />
+        <b> Place of Birth:</b> Long Island, New York, USA
+        <br />
+        <b>Age:</b> 50 years old
+        <br />
+        <b> Alignment:</b> Good
+        <br />
+        <b> Race:</b> Human
+      </p>
+
+      <h4>Power Status</h4>
+
+      <!-- Horizontal Power Status -->
+      <div class="power-status">
+        <div class="power-bar">
+          <span>Intelligence</span>
+          <div class="bar">
+            <div class="fill" style="width: 100%">100%</div>
+          </div>
+        </div>
+
+        <div class="power-bar">
+          <span>Strength</span>
+          <div class="bar">
+            <div class="fill" style="width: 80%">80%</div>
+          </div>
+        </div>
+
+        <div class="power-bar">
+          <span>Speed</span>
+          <div class="bar">
+            <div class="fill" style="width: 85%">85%</div>
+          </div>
+        </div>
+
+        <div class="power-bar">
+          <span>Durability</span>
+          <div class="bar">
+            <div class="fill" style="width: 90%">90%</div>
+          </div>
+        </div>
+
+        <div class="power-bar">
+          <span>Power</span>
+          <div class="bar">
+            <div class="fill" style="width: 90%">90%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Manana's &COPY; Avengers App 2025</p>
+    </footer>
   </body>
 </html>
